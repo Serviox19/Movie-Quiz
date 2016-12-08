@@ -13,15 +13,14 @@ $(document).ready(function () {
       console.log(movies);
 
       $('#content').append('<div class="col-md-4">\
-                              <div class="card"\
-                                <img class="responsive-img card-img-top" src="https://image.tmdb.org/t/p/w500' + movies.backdrop_path + '" alt="Card image cap">\
-                                <div class="card-block">\
-                                  <h4 class="card-title">'+ movies.title +'</h4>\
-                                  <p class="card-text">'+ movies.overview +'</p>\
-                                  <a href="#" class="btn btn-primary">Quiz</a>\
+                              <div class="thumbnail">\
+                                <img src="https://image.tmdb.org/t/p/w500' + movies.backdrop_path +'" alt="">\
+                                <div class="caption">\
+                                  <h3>'+ movies.title +'</h3>\
+                                  <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Quiz</a></p>\
                                 </div>\
-                              <div>\
-                            <div>');
+                              </div>\
+                            </div>');
     }
   });
 
