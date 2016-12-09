@@ -12,7 +12,7 @@ $(document).ready(function () {
   $.getJSON(apiUrl, function(data) {
     for (var i = 0; i < data.results.length; i++) {
       var movies = data.results[i];
-      console.log(movies);
+      // console.log(movies);
       var release_date = moment(movies.release_date).format('MMMM Do YYYY');
 
       $('#content').append(

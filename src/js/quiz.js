@@ -29,8 +29,13 @@ function submitAnswers(){
 
 	// Display Results
 	var results = document.getElementById('results');
+  // alert('You scored '+score+' out of ' +total);
 	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
-	alert('You scored '+score+' out of ' +total);
+
+  // //uncheck radio
+  // var ele = document.getElementsByType("radio");
+  // for(var i = 0; i < ele.length;i++)
+  //    ele[i].checked = false;
 
 	return false;
 }
