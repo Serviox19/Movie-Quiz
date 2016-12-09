@@ -10,21 +10,22 @@ $(document).ready(function () {
 
 
   $.getJSON(apiUrl, function(data) {
-    for (var i = 0; i < data.results.length; i++) {
+    for (var i = 0; i < 9; i++) {
       var movies = data.results[i];
       // console.log(movies);
       var release_date = moment(movies.release_date).format('MMMM Do YYYY');
 
       $('#content').append(
-        '<div class="col-xs-12 col-md-4">\
+        '<div class="col-xs-12 col-sm-6 col-md-4">\
           <div class="thumbnail">\
             <img src="https://image.tmdb.org/t/p/w500' + movies.backdrop_path +'" alt="">\
             <div class="caption">\
               <h3>'+ movies.title +'</h3>\
-              <p class="thumbnail-actions">\
+              <div class="thumbnail-actions">\
                 <a class="btn btn-primary" data-toggle="modal" data-target="#'+ movies.id +'">Info</a>\
-                <a class="btn btn-default" href="/movies/'+ movies.id +'">Quiz</a>\
-              </p>\
+                <span id="buttonSpacer"></span>\
+                <a class="btn btn-success" href="/movies/'+ movies.id +'">Quiz</a>\
+              </div>\
             </div>\
           </div>\
         </div>\
