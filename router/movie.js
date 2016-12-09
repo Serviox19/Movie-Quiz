@@ -13,7 +13,7 @@ movieRouter.route('/107')
 
 movieRouter.route('/161')
   .get(function (req, res) {
-    res.sendFile(process.cwd() + '/src/partials/oceans-11');
+    res.sendFile(process.cwd() + '/src/partials/oceans-11.html');
   })
 
 movieRouter.route('/163')

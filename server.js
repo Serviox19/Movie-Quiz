@@ -7,7 +7,9 @@ const express = require('express'),
 
 app.use(logger('dev'));
 app.use(express.static("src"));
+app.use(express.static("build"))
 app.use("/src", express.static(__dirname + "/src"));
+app.use("/build", express.static(__dirname + "/build"));
 app.use("/bower_components", express.static(__dirname + "/bower_components"));
 
 app.use('/movies', movieRouter);

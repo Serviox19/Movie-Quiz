@@ -4,8 +4,9 @@ $(document).ready(function () {
   var apiUrl = "https://api.themoviedb.org";
   apiUrl += "/3/discover/movie";
   apiUrl += "?api_key=" + apiKey;
-  apiUrl += "&with_people=287";
-  apiUrl += "&sort_by=popularity.desc";
+  apiUrl += "&language=en-US&sort_by=popularity.desc";
+  apiUrl += "&include_adult=false&include_video=true";
+  apiUrl += "&page=1&with_people=287";
 
 
   $.getJSON(apiUrl, function(data) {
