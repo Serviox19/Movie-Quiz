@@ -8,9 +8,50 @@
   </head>
   <body>
 
-    <a href="/">HOME</a><br />
+    <div class="container">
+      <a href="/">HOME</a><br />
 
-    <h1>Oceans 11</h1>
+      <header>
+        <h1>Oceans 11 Quiz!</h1>
+        <p>Think you know this movie? Let's see</p>
+      </header>
+      <section>
+        <div id="results"></div>
+        <form name="quizForm" onsubmit="return submitAnswers()">
+          <h3>Question 1</h3>
+          <input type="radio" name="q1" value="a" id="q1a">&nbsp;a. <br />
+          <input type="radio" name="q1" value="b" id="q1b">&nbsp;b. <br />
+          <input type="radio" name="q1" value="c" id="q1c">&nbsp;c. <br />
+          <input type="radio" name="q1" value="d" id="q1d">&nbsp;d. <br />
+          <br />
+          <h3>Question 2</h3>
+          <input type="radio" name="q1" value="a" id="q2a">&nbsp;a. <br />
+          <input type="radio" name="q1" value="b" id="q2b">&nbsp;b. <br />
+          <input type="radio" name="q1" value="c" id="q2c">&nbsp;c. <br />
+          <input type="radio" name="q1" value="d" id="q2d">&nbsp;d. <br />
+          <br />
+          <h3>Question 3</h3>
+          <input type="radio" name="q1" value="a" id="q3a">&nbsp;a. <br />
+          <input type="radio" name="q1" value="b" id="q3b">&nbsp;b. <br />
+          <input type="radio" name="q1" value="c" id="q3c">&nbsp;c. <br />
+          <input type="radio" name="q1" value="d" id="q3d">&nbsp;d. <br />
+          <br />
+          <h3>Question 4</h3>
+          <input type="radio" name="q1" value="a" id="q4a">&nbsp;a. <br />
+          <input type="radio" name="q1" value="b" id="q4b">&nbsp;b. <br />
+          <input type="radio" name="q1" value="c" id="q4c">&nbsp;c. <br />
+          <input type="radio" name="q1" value="d" id="q4d">&nbsp;d. <br />
+          <br />
+          <h3>Question 5</h3>
+          <input type="radio" name="q1" value="a" id="q5a">&nbsp;a. <br />
+          <input type="radio" name="q1" value="b" id="q5b">&nbsp;b. <br />
+          <input type="radio" name="q1" value="c" id="q5c">&nbsp;c. <br />
+          <input type="radio" name="q1" value="d" id="q5d">&nbsp;d. <br />
+          <br /><br />
+           <input type="submit" value="Submit Answers" class="btn btn-primary" />
+        </form>
+      </section>
+    </div><!-- End Container -->
 
   </body>
 </html>
