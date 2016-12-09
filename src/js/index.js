@@ -11,7 +11,7 @@ $(document).ready(function () {
   $.getJSON(apiUrl, function(data) {
     for (var i = 0; i < data.results.length; i++) {
       var movies = data.results[i];
-      // console.log(movies);
+      console.log(movies);
       var release_date = moment(movies.release_date).format('MMMM Do YYYY');
 
       $('#content').append(
@@ -22,7 +22,7 @@ $(document).ready(function () {
               <h3>'+ movies.title +'</h3>\
               <p class="thumbnail-actions">\
                 <a class="btn btn-primary" data-toggle="modal" data-target="#'+ movies.id +'">Info</a>\
-                <a class="btn btn-default" onclick="getInfo()">Quiz</a>\
+                <a class="btn btn-default" href="/movies/'+ movies.id +'">Quiz</a>\
               </p>\
             </div>\
           </div>\
@@ -49,7 +49,3 @@ $(document).ready(function () {
     }; // End content loop
   });
 });
-
-function getInfo() {
-  console.log(this);
-}
