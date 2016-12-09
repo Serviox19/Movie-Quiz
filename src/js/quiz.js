@@ -19,6 +19,11 @@ function submitAnswers(){
 
 	// Set Correct Answers
 	var answers = ["c","b","d","a","b"];
+  //1. C
+  //2. B
+  //3. D
+  //4. A
+  //5. B
 
 	// Check Answers
 	for(i = 1; i <= total;i++){
